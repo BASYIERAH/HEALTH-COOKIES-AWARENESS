@@ -1,0 +1,233 @@
+/* Global Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe4e1; /* Light pink background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #f8bbd0; /* Light pink header background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.top-left-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px; /* Adjust size as needed */
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #880e4f;
+    margin: 0 auto; /* Centers the header text */
+    text-align: center; /* Centers the text within the space */
+    padding-left: 120px; /* Adds padding to push it away from the left */
+}
+
+.header-slogan {
+    color: #880e4f;
+    font-size: 1.2em;
+    padding-right: 20px;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cute-link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #880e4f;
+    border: 2px solid #880e4f;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cute-link:hover {
+    background-color: #f48fb1;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Horizontal Rule (HR) Style */
+.custom-hr {
+    border: 0;
+    height: 3px;
+    background-color: #880e4f; /* Dark pink color */
+    margin: 1px 0; /* Adjust space between the header and hr */
+}
+
+/* Flex container for two separate boxes */
+.bmi-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 900px; /* Adjust the width as needed */
+    margin: 20px auto;
+}
+
+/* Box Styling for both sections */
+.bmi-box {
+    width: 45%;
+    padding: 20px;
+    background-color: #ffffff; /* Light pink background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: left;
+}
+
+/* Additional explanation section */
+.bmi-explanation {
+    margin-top: 20px;
+}
+
+.bmi-explanation h3 {
+    color: #d81b60;
+}
+
+.bmi-explanation p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #880e4f;
+}
+
+/* Tip Section */
+.tip-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tip-content {
+    display: flex;
+    align-items: center;
+}
+
+.tip-image {
+    width: 100px; /* Adjust size as needed */
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #d81b60;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8bbd0; /* Pink footer background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+footer p {
+    margin: 0;
+    color: #880e4f;
+    font-size: 0.9em;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc; /* Default bullet style */
+    list-style-position: inside; /* Bullets inside the padding area */
+    padding-left: 20px; /* Adjust this value to fit your design */
+    margin-left: 0; /* Remove any default margin */
+}
+
+li {
+    margin-left: 0; /* Ensure no additional margin is applied */
+    padding-left: 0; /* Remove padding if needed */
+    line-height: 1.5; /* Improve readability */
+}
+
+
+/* Flexbox container for mission and image */
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center horizontally */
+    height: 60vh; /* Adjust the height for centering the content */
+}
+
+/* Box for Mission section */
+.mission-box {
+    background-color: #ffffff; /* Light pink background */
+    padding: 20px;
+    width: 45%; /* Adjust width of the box */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    align-self: flex-end; /* Position the box lower (at the bottom of the container) */
+}
+
+/* Right-side image */
+.mission-image {
+    width: 45%; /* Adjust width of the image container */
+    text-align: right;
+    align-self: flex-start; /* Position image at the top of the container */
+}
+
+.big-image {
+    width: 100%; /* Full width of the container */
+    border-radius: 15px; /* Match with the box style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for image */
+}
+
+
+.big-image {
+    width: 100%; /* Full width of the container */
+    border-radius: 15px; /* Match with the box style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for image */
+}
+/* Adjust the size of input fields */
+input[type="number"] {
+    width: 90%; /* Reduce the width to fit better inside the box */
+    padding: 8px; /* Slightly reduce padding */
+    font-size: 1em; /* Slightly reduce font size */
+    margin-bottom: 10px; /* Adjust space below inputs */
+    border-radius: 10px; /* Rounded corners for inputs */
+    border: 2px solid #880e4f; /* Border color to match design */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Button styling */
+button {
+    width: 90%; /* Adjust the button width to match the input */
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: #f48fb1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add button shadow */
+}
+
+button:hover {
+    background-color: #880e4f;
+}
+

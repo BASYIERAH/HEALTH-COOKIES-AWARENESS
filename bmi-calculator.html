@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator - Health Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/stero.jpg.jpg" alt="A cute fruit illustration" class="top-left-image">
+        <h1>BMI Calculator</h1>
+        <nav>
+            <a href="index.html" class="cute-link">Home</a>
+            <a href="health-info.html" class="cute-link">Health Info</a>
+            <a href="bmi-calculator.html" class="cute-link">BMI Calculator</a>
+        </nav>
+    </header>
+
+    <hr class="custom-hr"> <!-- HR line -->
+    
+    <main>
+        <div class="bmi-container">
+            <!-- Left side: Calculate your BMI (first box) -->
+            <section class="bmi-box bmi-left">
+                <h2>Calculate Your BMI</h2>
+                <form id="bmi-form">
+                    <label for="height">Height (cm):</label><br>
+                    <input type="number" id="height" name="height" required><br><br>
+                    <label for="weight">Weight (kg):</label><br>
+                    <input type="number" id="weight" name="weight" required><br><br>
+                    <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+                </form>                
+                <p id="bmi-result"></p>
+            </section>
+            
+            <!-- Right side: Understanding BMI Categories and Explanation (second box) -->
+            <section class="bmi-box bmi-right">
+                <h2>Understanding BMI Categories</h2>
+                <ul>
+                    <li>Underweight: BMI less than 18.5</li>
+                    <li>Normal weight: BMI 18.5–24.9</li>
+                    <li>Overweight: BMI 25–29.9</li>
+                    <li>Obesity: BMI 30 or greater</li>
+                </ul>
+
+                <!-- Additional Explanation -->
+                <section class="bmi-explanation">
+                    <h3>What is BMI?</h3>
+                    <p>BMI (Body Mass Index) is a measurement that helps assess whether a person has a healthy weight based on their height and weight. It is commonly used as a screening tool to indicate whether a person is underweight, normal weight, overweight, or obese. Maintaining a normal BMI can lower your risk of health issues such as heart disease, diabetes, and high blood pressure.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Health Awareness. All rights reserved.SYIERAHCOOKIES</p>
+    </footer>
+</body>
+</html>
+
